@@ -16,8 +16,9 @@ function fibo(num) {
     let num1 = 0;
     let num2 = 1;
     let fiboNum;
-    if (num < 1 || num == undefined) {
+    if (num < 1 || num == null || num == "") {
         document.querySelector(".output").innerHTML = "Please enter a valid number";
+        return;
     } else {
         for (let i = 1; i <= num; i++) {
             fiboNum = num1 + num2;
