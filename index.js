@@ -16,7 +16,7 @@ function fibo(num) {
     let num1 = 0;
     let num2 = 1;
     let fiboNum;
-    if (num < 1 || num == null || num == "") {
+    if (num < 1 || isNaN(num) || num === null) {
         document.querySelector(".output").innerHTML = "Please enter a valid number";
         return;
     } else {
